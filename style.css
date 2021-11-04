@@ -349,6 +349,8 @@
     }
 }
 
+/*services and card*/
+
 .services{
     background: #141414;
     display: flex;
@@ -419,4 +421,30 @@
     transform: scale(1.075);
     transition: 0.2 ease-in;
     cursor: pointer;
+}
+
+/*responsive services and cards*/
+@media screen and (max-width: 960px){
+    .services{
+        height: 1600px;
+    }
+
+    .services h1{
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+@media screen and(max-width: 480px){
+    .services{
+        height: 1400px;
+    }
+
+    .services h1{
+        font-size: 1.2rem;
+    }
+
+    .services__card{
+        width: 300px;
+    }
 }
